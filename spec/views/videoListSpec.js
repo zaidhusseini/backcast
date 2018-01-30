@@ -4,7 +4,7 @@ describe('VideoListView', function() {
   beforeEach(function() {
     sinon.spy(VideoListView.prototype, 'render');
     sinon.spy(VideoListEntryView.prototype, 'render');
-
+    
     collection = new Videos(fakeVideoData);
     view = new VideoListView({ collection: collection });
   });

@@ -21,6 +21,8 @@ describe ('VideoPlayerView', function() {
   });
 
   it('should re-render when an item is selected', function() {
+    console.log('view',view);
+    //console.log('collection.at(0)',collection.at(0))
     collection.at(0).select();
     expect(view.render).to.have.been.called;
   });
