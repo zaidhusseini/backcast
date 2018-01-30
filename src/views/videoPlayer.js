@@ -4,7 +4,11 @@ var VideoPlayerView = Backbone.View.extend({
 
   initialize:function(){
     //console.log(this.collection.collection);
-    this.model.on('select', this.render, this);  
+    this.model.on('select', function() {
+      this.render;
+      //console.log('it should be rerendering');
+    }, this);  
+    
     this.render(); 
   },
 
