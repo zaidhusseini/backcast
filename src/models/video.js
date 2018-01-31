@@ -8,7 +8,7 @@ var Video = Backbone.Model.extend({
 
   select: function(attributes) {
     this.trigger('select', attributes);
-    console.log('my attributes', attributes);
+    //console.log('my attributes', attributes);
   }
 
 });
